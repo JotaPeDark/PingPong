@@ -1,8 +1,8 @@
-let raqueteEsquerdaX = 20;
-let raqueteEsquerdaY = 200;
+let raqueteEsquerdaX = 100;
+let raqueteEsquerdaY = 400;
 
-let raqueteDireitaX = 380;
-let raqueteDireitaY = 200;
+let raqueteDireitaX = 700;
+let raqueteDireitaY = 400;
 
 let velocidadeRaquete = 2;
 let alturaRaquete = 80;
@@ -11,21 +11,19 @@ let larguraRaquete = 10;
 let pontuacaoEsquerda = 0;
 let pontuacaoDireita = 0;
 
-let bolaPosX = 200;
-let bolaPosY = 200;
+let bolaPosX = 400;
+let bolaPosY = 400;
 let bolaVelocidadeX = 0;
 let bolaVelocidadeY = 0;
 let tamanhoBola = 10;
 
 function setup() {
-  createCanvas(400, 400);
-
+  createCanvas(800, 800);
   rectMode(CENTER);
   fill(255);
   noStroke();
   textSize(40);
   textAlign(CENTER);
-
   noLoop();
 }
 
@@ -120,7 +118,7 @@ function draw() {
   );
 
   if (!isLooping()) {
-    text('Clique para começar', width / 2, height / 2 - 20);
+    text('Clique', width / 2, height / 2 - 20);
   }
 }
 
